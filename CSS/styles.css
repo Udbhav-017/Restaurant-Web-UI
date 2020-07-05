@@ -14,24 +14,6 @@ body {
     width: auto;
 }
 
-@media (min-width:1199px){
-    #logo-img{
-        background: url('../images/restaurant-logo_large.png') no-repeat;
-        width: 150px;
-        height: 150px;
-        margin-right: 15px;
-    }
-}
-
-@media (min-width:992px) and (max-width:1199px){
-    #logo-img{
-        background: url('../images/restaurant-logo_medium.png') no-repeat;
-        width: 99px;
-        height: 99px;
-        margin-right: 15px;
-    }
-}
-
 .navbar-brand{
     padding-top: 25px;
 }
@@ -62,5 +44,44 @@ body {
 
 .navbar-brand p span{
     vertical-align: middle;
+}
+
+@media (max-width:437px){
+    .navbar-brand h1{
+           font-size: 0.9em;
+           white-space: normal;
+           line-height: 1em;
+           text-align: center;
+    }
+    .mlt{
+       margin-top: -40px;
+    }
+}
+
+@media (min-width:576px) and (max-width:1199px){
+    .navbar-brand h1{
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    #logo-img{
+        background: url('../images/restaurant-logo_medium.png') no-repeat;
+        width: 99px;
+        height: 99px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width:1199px){
+    #logo-img{
+        background: url('../images/restaurant-logo_large.png') no-repeat;
+        width: 150px;
+        height: 150px;
+        margin-right: 15px;
+    }
+    .navbar-brand h1{
+        font-size: 1.4em;
+    }
 }
 
