@@ -9,12 +9,13 @@
         <link rel="stylesheet" href="CSS/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     
     <body>
        <header>
            <nav id="header-nav" class="navbar navbar-default navbar-expand-md navbar-light">
-               <div class="container-fluid container-md align-items-start">
+               <div class="container-lg align-items-start">
 
                     <a href="index.html" class="float-left  d-none d-sm-block">
                         <div id="logo-img" alt="Logo image"></div>
@@ -29,10 +30,40 @@
                         </p>
                     </div>
 
-                    <button class="navbar-toggler ml-auto align-self-end mlt" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ml-auto align-self-end mlt" type="button" data-toggle="collapse" data-target="#collapsable-nav-items" aria-controls="collapsable-nav-items" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                      </button>   
-                 </div>
+                    </button>   
+
+                 <div id="collapsable-nav-items" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="navbar-nav ml-auto">
+                      <li>
+                        <a class="nav-link" href="menu-categories.html">
+                          <i class="material-icons">restaurant_menu</i>
+                        <br class="d-none d-md-block">Menu
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="menu-categories.html">
+                          <i class="material-icons">info</i>
+                        <br class="d-none d-md-block">About
+                        </a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="menu-categories.html">
+                          <i class="material-icons">star</i>
+                        <br class="d-none d-md-block">Awards
+                        </a>
+                      </li>
+                      <li id="phone" class="d-none d-md-block">
+                        <a class="nav-link" href="tel:123456789">
+                          <i class="material-icons">call</i>
+                          <span class="float-right phone_no d-none d-lg-block">210-215-1234</span>             
+                        </a>
+                        <div>*We Deliver</div>
+                      </li>
+                    </ul>
+                  </div>
+               </div>
            </nav>
        </header>
 
