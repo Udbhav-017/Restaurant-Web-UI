@@ -48,6 +48,7 @@ body {
 #nav-list a{
     color: #951C49;
     text-align: center;
+    border-radius: 4px;
 }
 
 #nav-list a:hover{
@@ -77,8 +78,8 @@ body {
     padding-left: 1px;
 }
 
-#header-nav button{
-    border-color: #61122f;
+.navbar-toggler .navbar-toggler-icon{
+    
 }
 
 @media (max-width:438px){
@@ -88,7 +89,7 @@ body {
            line-height: 1em;
            text-align: center;
     }
-    .mlt{
+    .hamburger{
        margin-top: -40px;
     }
     .navbar-brand p{
@@ -99,6 +100,24 @@ body {
 @media (max-width: 1199px){
     .navbar-brand{
         padding-top: 10px;
+    }
+}
+
+@media (max-width: 767px){
+    #collapsable-nav-items{
+        margin-top: 8px;
+        border-top: 1px white solid;
+    }
+
+    #collapsable-nav-items a{
+        font-size: 1.2em;
+    }
+    
+    #collapsable-nav-items a i{
+        position: relative;
+        top: 4px;
+        font-size: 1.1em;
+        margin-right: 5px;
     }
 }
 
@@ -130,6 +149,9 @@ body {
     }
     #phone a span{
         font-size: 1.65em;
+    }
+    #phone div{
+        font-size: 0.9em;
     }
 }
 
