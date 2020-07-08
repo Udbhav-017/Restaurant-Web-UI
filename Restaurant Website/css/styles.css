@@ -12,6 +12,7 @@ body {
     border-radius: 0;
     border: 0;
     width: auto;
+    padding-bottom: 0;
 }
 
 .navbar-brand{
@@ -69,7 +70,7 @@ body {
     display: inline;
     font-size: 1.9em;
     line-height: 1;
-    margin-left: 4px;
+    margin-left: 2px;
 }
 
 #phone div{
@@ -104,9 +105,15 @@ body {
 }
 
 @media (max-width: 767px){
-    #collapsable-nav-items{
+    #nav-list{
         margin-top: 8px;
-        border-top: 1px white solid;
+        margin-bottom: 8px;
+    }
+
+    #collapsable-nav-items{
+        border-top: 1px solid #E7E7E7 ;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
     #collapsable-nav-items a{
