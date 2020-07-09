@@ -13,6 +13,7 @@ body {
     border: 0;
     width: auto;
     padding-bottom: 0;
+    margin-bottom:15px;
 }
 
 .navbar-brand{
@@ -79,10 +80,6 @@ body {
     padding-left: 1px;
 }
 
-.navbar-toggler .navbar-toggler-icon{
-    
-}
-
 @media (max-width:438px){
     .navbar-brand h1{
            font-size: 0.9em;
@@ -93,9 +90,6 @@ body {
     .hamburger{
        margin-top: -40px;
     }
-    .navbar-brand p{
-        font-size: .4em;
-    }
 }
 
 @media (max-width: 1199px){
@@ -105,6 +99,9 @@ body {
 }
 
 @media (max-width: 767px){
+    .navbar-brand p{
+        font-size: .65em;
+    }
     #nav-list{
         margin-top: 8px;
         margin-bottom: 8px;
@@ -112,7 +109,7 @@ body {
 
     #collapsable-nav-items{
         border-top: 1px solid #E7E7E7 ;
-        margin-left: -20px;
+        margin-left: -18px;
         margin-right: -20px;
     }
 
@@ -127,19 +124,11 @@ body {
         margin-right: 5px;
     }
 }
-
-@media (min-width:439px) and (max-width:575px){
-    .navbar-brand p{
-        font-size: .45em;
-    }
 }
 
 @media (min-width:576px) and (max-width:1199px){
     .navbar-brand h1{
         font-size: 1.2em;
-    }
-    .navbar-brand p{
-        font-size: .5em;
     }
 }
 
@@ -162,7 +151,7 @@ body {
     }
 }
 
-@media (min-width:1199px){
+@media (min-width:1200px){
     #logo-img{
         background: url('../images/restaurant-logo.png') no-repeat;
         width: 150px;
@@ -174,7 +163,75 @@ body {
         font-size: 1.4em;
     }
     #nav-list{
-        margin: 15px;
+        margin-top: 14px;
     }
 }
 
+/* -----------------HEADER ENDS--------------- */
+
+#call-btn{
+    margin-bottom: 15px;
+    text-align: center;
+    background-color:#f9b900;
+    border: 2px solid #E7E7E7;
+    border-radius: 4px;
+}
+
+#call-btn a , #call-btn a:hover, #call-btn a:focus{
+    text-decoration: none;
+    color: #951C49;
+}
+
+#call-btn:hover{
+    box-shadow: 0 0 3px #E7E7E7;
+}
+
+#call-btn:active{
+    font-size: 0.98em;
+}
+
+#call-btn a i{
+    position: relative;
+    font-size: 2em;
+    top: 5px;
+}
+
+#call-btn a span{
+    font-size: 1.85em;
+}
+
+.jumbotron{
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
+@media(min-width: 1200px){
+    .jumbotron{
+        background: url('../images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .jumbotron{
+        background: url('../images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .jumbotron{
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+    }
+}
+
+@media(max-width: 767px){
+    .jumbotron{
+        padding: 0;
+    }
+}
+
+body{
+    overflow-x: hidden !important;
+}
