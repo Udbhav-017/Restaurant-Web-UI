@@ -183,7 +183,7 @@ body {
 }
 
 #call-btn:hover{
-    box-shadow: 0 0 3px #E7E7E7;
+    box-shadow: 0 0 3px #ffffff;
 }
 
 #call-btn:active{
@@ -229,6 +229,67 @@ body {
 @media(max-width: 767px){
     .jumbotron{
         padding: 0;
+    }
+
+    #menu-tile, #specials-tile, #map-tile{
+        width: 350px;
+        margin: 0 auto 15px;
+    }
+
+}
+
+#menu-tile, #specials-tile,#map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile{
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#specials-tile{
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#map-tile{
+    background: url('../images/map-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span,#map-tile span{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+@media(max-width: 767px){
+    #menu-tile, #specials-tile, #map-tile{
+        width: 350px;
+        margin: 0 auto 15px;
+    }
+
+}
+
+@media(max-width: 380px){
+    #menu-tile, #specials-tile, #map-tile{
+        width: 90vw;
+        margin: 0 auto 15px;
     }
 }
 
