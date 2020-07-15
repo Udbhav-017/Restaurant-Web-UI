@@ -169,6 +169,53 @@ body {
 
 /* -----------------HEADER ENDS--------------- */
 
+.panel-footer{
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: #222;
+    border-top: 0;
+}
+
+.panel-footer div.row{
+    margin-bottom: 5px;
+}
+
+#hours > span, #address > span{
+    font-size: 1.3em;
+    line-height: 2;
+}
+
+#address p{
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+#testimonials{
+    font-style: italic;
+}
+
+#testimonials p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+    .panel-footer section{
+        text-align: center;
+        margin-bottom:20px ;
+    }
+
+    .panel-footer section hr{
+        width: 50%;
+        background-color: #ccc;
+    }
+}
+
+/* FOOTER ENDS */
+
 #call-btn{
     margin-bottom: 15px;
     text-align: center;
@@ -269,6 +316,7 @@ body {
 #menu-tile span, #specials-tile span,#map-tile span{
     position: absolute;
     bottom: 0;
+    right: 0;
     width: 100%;
     text-align: center;
     font-size: 1.6em;
